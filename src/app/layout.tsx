@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import * as React from 'react';
 
 import '@/styles/globals.css';
-// !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
-import '@/styles/colors.css';
+
+import SmoothScrolling from '@/components/SmoothScroll';
 
 import { siteConfig } from '@/constant/config';
 
@@ -56,7 +56,9 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>{children}</body>
+      <body>
+        <SmoothScrolling>{children}</SmoothScrolling>
+      </body>
     </html>
   );
 }
