@@ -55,7 +55,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <html className='overflow-x-hidden bg-black'>
       <body>
         <SmoothScrolling>{children}</SmoothScrolling>
       </body>
